@@ -1,0 +1,23 @@
+---
+title: "Dengue 2023 Report"
+author: "Akshay Deverakonda"
+output: html_document
+---
+
+```{r, here-i-am, include = FALSE}
+here::i_am(
+  "report.Rmd"
+)
+```
+
+```{r, echo = FALSE}
+knitr::include_graphics("output/Serotype_breakdown.png", dpi=10)
+```
+
+The table produced above shows Mexican states as rows and the four serotypes of dengue as columns. It shows the distribution of dengue cases by serotype in each state.
+
+```{r, echo = FALSE}
+knitr::include_graphics("output/map.png", dpi=10)
+```
+
+The map produced above shows the distribution of dengue cases throughout Mexico in 2023. The cases are colored differently by serotype.
