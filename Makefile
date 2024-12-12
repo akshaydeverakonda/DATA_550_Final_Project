@@ -11,6 +11,6 @@ output/map.png: code/02_make_map.R data/Simulated_Dengue_Data.shp
 clean:
 	rm -f output/* && rm -f report.html
 	
-	.PHONY: install
+.PHONY: install
 install:
 	Rscript -e "renv::restore(prompt = FALSE)"

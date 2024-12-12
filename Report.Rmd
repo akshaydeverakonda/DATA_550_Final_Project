@@ -10,6 +10,8 @@ here::i_am(
 )
 ```
 
+This report summarizes dengue cases that occured in Mexico in 2023. This report includes one table summarizing the breakdown of serotypes of cases for each state and one map showing the geographic distribution of cases by serotype throughout the country.
+
 ```{r, echo = FALSE}
 knitr::include_graphics("output/Serotype_breakdown.png", dpi=10)
 ```

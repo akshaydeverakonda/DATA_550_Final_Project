@@ -1,5 +1,5 @@
 library(pacman)
-pacman::p_load(tidyverse, sf, mapview, rvest, httr, gtsummary, ggplot2, viridis, tidyr, knitr, stringr, gt)
+pacman::p_load(tidyverse, sf, mapview, rvest, httr, gtsummary, ggplot2, viridis, tidyr, knitr, stringr, gt, webshot)
 
 here::i_am("code/02_make_map.R")
 

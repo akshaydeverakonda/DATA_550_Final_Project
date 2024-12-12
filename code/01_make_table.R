@@ -16,10 +16,13 @@ df <- df %>%
 
 colnames(df) <- c("State","Serotype")
 
-summary_table_t <- df %>%
-  count(State, Serotype) %>%
-  spread(key = Serotype, value = n, fill = 0) %>%
-  gt()
+summary_table_2 <- df %>%
+  tbl_summary(by=Serotype, percent = "row") %>%
+  modify_spanning_header(all_stat_cols() ~ "Serotype")
 
-gtsave(summary_table_t, "output/Serotype_breakdown.png", vwidth = 1500, vheight = 1000)
+summary_table_2 %>%
+  as_gt() %>%
+  gt::gtsave("output/Serotype_breakdown.png")
+
+
 
