@@ -1,5 +1,7 @@
+install.packages("pacman")
 library(pacman)
-pacman::p_load(tidyverse, sf, mapview, rvest, httr, gtsummary, ggplot2, viridis, tidyr, knitr, stringr, gt, webshot2)
+pacman::p_load(here, sf, gt, gtsummary, tidyverse)
+#pacman::p_load(tidyverse, sf, mapview, rvest, httr, gtsummary, ggplot2, viridis, tidyr, knitr, stringr, gt, webshot2)
 
 here::i_am("code/01_make_table.R")
 
