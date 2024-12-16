@@ -4,7 +4,7 @@ This project will generate an html report summarizing dengue cases in Mexico tha
 
 ## Docker-related instructions - making the docker image
 
-- Run 'make data_550_f' in the terminal to build the Docker image.
+- Run `make data_550_f` in the terminal to build the Docker image.
 
 ## Docker-related instructions - generating the report from the container
 
