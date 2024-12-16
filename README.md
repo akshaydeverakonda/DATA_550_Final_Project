@@ -8,9 +8,9 @@ This project will generate an html report summarizing dengue cases in Mexico tha
 
 ## Docker-related instructions - generating the report from the container
 
-- If you're using a Windows OS, run 'make windows/report/report.html' in the terminal to run the container from the image. 
+- If you're using a Windows OS, run `make windows/report/report.html` in the terminal to run the container from the image. 
 
-- If you're using a Mac/Linux-OS, run 'make mac/report/report.html' in the terminal to run the container from the image. 
+- If you're using a Mac/Linux-OS, run `make mac/report/report.html` in the terminal to run the container from the image. 
 
 - Regardless of using either of the two above commands, the final report will generate in the 'report' folder.
 
