@@ -2,6 +2,19 @@
 
 This project will generate an html report summarizing dengue cases in Mexico that occurred in 2023.
 
+##Docker-related instructions - making the docker image
+
+Run 'make data_550_f' in the terminal to build the Docker image.
+
+##Docker-related instructions - generating the report from the container
+
+If you're using a Windows OS, run 'make windows/report/report.html' in the terminal to run the container from the image. 
+
+If you're using a Mac/Linux-OS, run 'make mac/report/report.html' in the terminal to run the container from the image. 
+
+Regardless of using either of the two above commands, the final report will generate in the 'report' folder.
+
+
 ## Code description
 
 `code/01_make_table.R`
@@ -22,10 +35,8 @@ This project will generate an html report summarizing dengue cases in Mexico tha
 - The makefile contains the rules for creating the table, map, and final report
 - If the user runs the "make report.html" rule, that will create the report.html output in the project directory.
 - Additional rules for creating the table and map of dengue case data are listed; thee outputs are the prerequisites for making the report.
-
-There is a rule "clean" for clearing the output folder and deleting the report from the project directory. 
-
-This github repository contains a renv lockfile which contains the packages needed for this project. To restore the packages, run "make install" from your terminal, which will synchronize the package repository.
+- There is a rule "clean" for clearing the output folder and deleting the report from the project directory. 
+- To restore the packages from the included renv lockfile, run "make install" from your terminal, which will synchronize the package repository.
 
 
 
