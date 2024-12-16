@@ -2,18 +2,20 @@
 
 This project will generate an html report summarizing dengue cases in Mexico that occurred in 2023.
 
-##Docker-related instructions - making the docker image
+## Docker-related instructions - making the docker image
 
-Run 'make data_550_f' in the terminal to build the Docker image.
+- Run 'make data_550_f' in the terminal to build the Docker image.
 
-##Docker-related instructions - generating the report from the container
+## Docker-related instructions - generating the report from the container
 
-If you're using a Windows OS, run 'make windows/report/report.html' in the terminal to run the container from the image. 
+- If you're using a Windows OS, run 'make windows/report/report.html' in the terminal to run the container from the image. 
 
-If you're using a Mac/Linux-OS, run 'make mac/report/report.html' in the terminal to run the container from the image. 
+- If you're using a Mac/Linux-OS, run 'make mac/report/report.html' in the terminal to run the container from the image. 
 
-Regardless of using either of the two above commands, the final report will generate in the 'report' folder.
+- Regardless of using either of the two above commands, the final report will generate in the 'report' folder.
 
+## Pulling image from Dockerhub
+- Another option is to pull the image from https://hub.docker.com/repository/docker/adeverakonda/data550/general and use the image tagged as "step2".
 
 ## Code description
 
