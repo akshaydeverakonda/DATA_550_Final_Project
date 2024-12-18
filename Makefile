@@ -30,9 +30,9 @@ data_550_f: Dockerfile $(PROJECTFILES) $(RENVFILES)
 #Rule to build report automatically in container on Windows
 
 windows/report/report.html: 
-	docker run -v "/$$(pwd)/report":"/home/rstudio/project/report" adeverakonda/data_550:step2
+	docker run -v "/$$(pwd)/report":"/home/rstudio/project/report" adeverakonda/data550:step2
 	
 #Rule to build report automatically in container on Mac
 mac/report/report.html:
-	docker run -v "$$(pwd)/report":"/home/rstudio/project/report" adeverakonda/data_550:step2
+	docker run -v "$$(pwd)/report":"/home/rstudio/project/report" adeverakonda/data550:step2
 
