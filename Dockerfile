@@ -24,7 +24,6 @@ ENV RENV_PATHS_CACHE = renv/.cache
 RUN R -e "renv::restore()"
 #Step 1
 
-FROM adeverakonda/data_550:step1 AS final_step
 
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     apt-get install -y ./google-chrome-stable_current_amd64.deb && \
